@@ -21,13 +21,15 @@ public class MyTriangle {
     public double getPerimeter(){
         return (v1.distance(v2) + v2.distance(v3) + v3.distance(v1));
     }
-    public String getType(){
+    public String getType() {
         double d1 = v1.distance(v2);
         double d2 = v2.distance(v3);
         double d3 = v3.distance(v1);
-        if (d1 == d2 && d2 == d3) {
+        double epsilon = 0.01;
+
+        if (Math.abs(d1 - d2) < epsilon && Math.abs(d2 - d3) < epsilon) {
             return "Equilateral";
-        } else if (d1 == d2 || d2 == d3 || d3 == d1) {
+        } else if (Math.abs(d1 - d2) < epsilon || Math.abs(d2 - d3) < epsilon || Math.abs(d3 - d1) < epsilon) {
             return "Isosceles";
         } else {
             return "Scalene";

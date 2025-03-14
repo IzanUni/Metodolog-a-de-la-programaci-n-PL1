@@ -10,6 +10,7 @@ public class Book {
         this.name = name;
         this.authors = authors;
         this.price = price;
+        this.qty = 0;
     }
     public Book(String name, Author[] authors, double price, int qty){
         this.name = name;
