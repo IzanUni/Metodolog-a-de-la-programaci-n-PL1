@@ -3,10 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/Ejercicios1-b.iml" filepath="$PROJECT_DIR$/Ejercicios1-b.iml" />
 =======
       <module fileurl="file://$PROJECT_DIR$/Ejercicios1-c.iml" filepath="$PROJECT_DIR$/Ejercicios1-c.iml" />
 >>>>>>> 9f3ebda (Ejercicios1-c)
+=======
+      <module fileurl="file://$PROJECT_DIR$/Ejercicios1-D.iml" filepath="$PROJECT_DIR$/Ejercicios1-D.iml" />
+>>>>>>> 8538393 (Ejercicios1-d)
     </modules>
   </component>
 </project>
