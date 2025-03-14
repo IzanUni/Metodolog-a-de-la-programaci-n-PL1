@@ -42,9 +42,9 @@ public class Account {
         return balance;
     }
 
-
     public int transferto(Account another, int amount) {
         if (amount <= balance) {
+            balance -= amount;
             another.credit(amount);
         } else {
             System.out.println("Amount exceeds balance");
