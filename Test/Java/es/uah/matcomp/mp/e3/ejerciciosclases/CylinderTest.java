@@ -9,30 +9,30 @@ class CylinderTest {
     void testDefaultConstructor() {
         Cylinder cylinder = new Cylinder();
         assertEquals(1.0, cylinder.getRadius(), 0.01);
-        assertEquals("red", cylinder.getColor());
         assertEquals(1.0, cylinder.getHeight(), 0.01);
+        assertEquals("red", cylinder.getColor());
     }
 
     @Test
     void testConstructorWithHeight() {
         Cylinder cylinder = new Cylinder(5.0);
-        assertEquals(1.0, cylinder.getRadius(), 0.01); // Hereda radio por defecto de Circle
-        assertEquals("red", cylinder.getColor());
+        assertEquals(1.0, cylinder.getRadius(), 0.01);
         assertEquals(5.0, cylinder.getHeight(), 0.01);
+        assertEquals("red", cylinder.getColor());
     }
 
     @Test
     void testConstructorWithRadiusAndHeight() {
-        Cylinder cylinder = new Cylinder(3.5, 7.0);
-        assertEquals(3.5, cylinder.getRadius(), 0.01);
+        Cylinder cylinder = new Cylinder(3.0, 7.5);
+        assertEquals(3.0, cylinder.getRadius(), 0.01);
+        assertEquals(7.5, cylinder.getHeight(), 0.01);
         assertEquals("red", cylinder.getColor());
-        assertEquals(7.0, cylinder.getHeight(), 0.01);
     }
 
     @Test
     void testGetHeight() {
-        Cylinder cylinder = new Cylinder(10.0);
-        assertEquals(10.0, cylinder.getHeight(), 0.01);
+        Cylinder cylinder = new Cylinder(4.5);
+        assertEquals(4.5, cylinder.getHeight(), 0.01);
     }
 
     @Test
@@ -43,7 +43,7 @@ class CylinderTest {
 
     @Test
     void testToString() {
-        Cylinder cylinder = new Cylinder(2.0, 5.0);
-        assertEquals("Cylinder: subclass of Circle[Shape[color=red,filled=true],radius=2.0] height:5.0", cylinder.toString());
+        Cylinder cylinder = new Cylinder(2.0, 4.0);
+        assertEquals("Cylinder: subclass of Circle[Shape[color=red,filled=true],radius=2.0] height:4.0", cylinder.toString());
     }
 }
